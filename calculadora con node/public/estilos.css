@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Título */
+.container h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Texto */
+.container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#CalculadoraForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Inputs y select */
+#CalculadoraForm input,
+#CalculadoraForm select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Efecto al seleccionar */
+#CalculadoraForm input:focus,
+#CalculadoraForm select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Botón */
+#CalculadoraForm button {
+    padding: 12px;
+    background: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover botón */
+#CalculadoraForm button:hover {
+    background: #007bff;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #f1f5ff;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 30px;
+}
